@@ -1,27 +1,150 @@
-# Angular9App
+<p align="center">
+  <h1 align="center">Angular 9 Application</h1>
+  <p align="center">
+    Angular 9.1.4 + Angular CLI + Angular Universal
+    <br>
+    Lazy Loading + SSR + PWA + SEO + google Analytics + API REST (Node.js)
+    <br>
+    Prototype bootstrap
+    <br>
+    <br>
+    <br>
+      <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 9 Example Application"/>
+  </p>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+## Lighthouse Audit
+<img src="https://api.ganatan.com/articles/img/search-engine-optimization-avec-angular-lighthouse-after.png"/>
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Status](#status)
+- [Quick start](#quick-start)
+- [Front-end](#front-end)
+- [Back-end](#back-end)
+- [Author](#author)
+- [Documentation](#documentation)
 
-## Code scaffolding
+## Status
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[![GitHub stars](https://img.shields.io/github/stars/dev-assassin/angular9-app.svg?style=social&label=Star)](https://github.com/dev-assassin/angular9-app)
+[![GitHub forks](https://img.shields.io/github/forks/dev-assassin/angular9-app.svg?style=social&label=Fork)](https://github.com/dev-assassin/angular9-app/fork)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+### Front-end : What's included
+> Dependencies
+- [x] Angular : 9.1.4
+- [x] Angular CLI : 9.1.4
+- [x] Angular Universal : 9.1.0
+- [x] Bootstrap : 4.4.1
+- [x] Fontawesome : 5.13.0
+- [x] jquery : 3.5.1
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> Features
+- [x] Routing
+- [x] Lazy Loading
+- [x] Server Side Rendering
+- [x] Progressive Web App
+- [x] Responsive Layout
+- [x] Search Engine Optimization (SEO)
+- [x] Components
+- [x] Services
+- [x] inheritance
+- [x] Search / Grid / Pagination
+- [x] Leaflet open-source JavaScript library
 
-## Running end-to-end tests
+### Back-end : What's included
+> Dependencies
+- [x] Node.js : 12.16.2
+- [x] Express.js : 4.17.1
+- [x] pg-promise : 10.4.4
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+> Features
+- [x] PostgreSQL
+- [x] Database Creation
+- [x] Domains Creation
+- [x] Tables Creation
+- [x] Importing Data
+- [x] Exporting Data
+- [x] RESTful API
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Quick start
+
+```bash
+# clone the repo
+git clone https://github.com/dev-assassin/angular9-app.git
+
+# change directory
+cd angular9-app
+
+# install the repo with npm
+npm install
+
+# start the server
+npm start
+
+```
+in your browser go to [http://localhost:4200](http://localhost:4200)
+
+
+## Front-end
+
+### Installation
+* `npm install` (installing dependencies)
+* `npm outdated` (verifying dependencies)
+
+### Developpement
+* `npm run start`
+* in your browser [http://localhost:4200](http://localhost:4200)
+
+### Settings
+* you can select one of these Datasources
+
+* Change settings in src/app/modules/application/movies-images-list
+* File config/config.service.ts
+* default: LOCAL JSON
+* LOCAL REST API CRUD : http://localhost:5200
+
+### Tests
+* `npm run lint`
+* `npm run test`
+* `npm run e2e`
+
+### Compilation
+* `npm run build`       ( without SSR)
+* `npm run build:ssr`   ( with SSR)
+
+### Production
+* `npm run serve:ssr`
+* in your browser [http://localhost:4000](http://localhost:4000)
+
+### Prototype Bootstrap
+* `change directory` cd ui
+* launch html pages in your browser
+
+## Back-end
+
+### Installation
+* `change directory` cd api
+* `npm install` (installing dependencies)
+* `npm outdated` (verifying dependencies)
+
+### Database Creation
+* `change login and password for postgreSQL in file config.json`
+* `login":"postgres"`
+* `password":"your_password"`
+
+* `npm run app` (database creation)
+
+### Developpement
+* `npm run start`
+* in your browser [http://localhost:5200](http://localhost:5200)
+
+### Tests API
+* in your browser [http://localhost:5200/movies](http://localhost:5200/movies)
+
+### Author
+* Updated : 11/05/2020
+* Author  : Assassin
