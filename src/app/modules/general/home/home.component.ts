@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {environment} from '../../../../environments/environment'
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-home',
@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
 
     feautures: any;
     constructor(
+        private meta: Meta,
         private titleService: Title
     ) {
         
@@ -24,5 +25,14 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
         this.titleService.setTitle('angular.dev-assassin: Use Application Web avec Angular');
+        this.meta.addTag({
+            name: 'angular.dev-assassin',
+            content: 'alexandra.petrov'
+        });
+        this.meta.updateTag({
+            name: 'description',
+            content: 'Cette application a été développée avec Angular version 9.1.4 et bootstrap 4.4.1' +
+            ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)'
+        });
     }
 }
