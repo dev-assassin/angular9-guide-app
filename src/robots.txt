@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://angular.dev-assassin.com/sitemap.xml
