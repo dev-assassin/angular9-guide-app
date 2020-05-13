@@ -15,12 +15,68 @@ export class HomeComponent implements OnInit {
     bootstrap = environment.application.bootstrap;
     fontawesome = environment.application.fontawesome;
 
-    feautures: any;
+    features: any;
     constructor(
         private meta: Meta,
         private titleService: Title
     ) {
-        
+        this.features =
+        [
+          {
+            type: 'Bootstrap Prototype',
+            description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
+            image: 'demo-bootstrap-prototype.png',
+            link: 'bootstrap-prototype'
+          },
+          {
+            type: 'Reactive Form',
+            description: 'A model-driven approach to handling form inputs',
+            image: 'demo-reactive-forms.png',
+            link: 'reactive-form'
+          },
+          {
+            type: 'Services',
+            description: 'Use services to view a playlist and a youtube player',
+            image: 'demo-services-playlist-youtube.png',
+            link: 'services'
+          },
+          {
+            type: 'Components',
+            description: 'Smartphone Component with Input, Output and Event Emitter',
+            image: 'demo-components.png',
+            link: 'components'
+          },
+          {
+            type: 'HttpClient',
+            description: 'Use an external API with the HttpClient module',
+            image: 'demo-httpclient.png',
+            link: 'httpclient'
+          },
+          {
+            type: 'Template Driven Forms',
+            description: 'Forms are the mainstay of business applications',
+            image: 'demo-template-driven-forms.png',
+            link: 'template-driven-forms'
+          },
+          {
+            type: 'Charts',
+            description: 'Integrate the open-source library Chart.js',
+            image: 'demo-charts.png',
+            link: 'charts'
+          },
+          {
+            type: 'Leafleft',
+            description: 'An open-source JavaScript library for mobile-friendly interactive maps',
+            image: 'demo-leaflet-feature.png',
+            link: 'leaflet'
+          },
+          {
+            type: 'Responsive Images list',
+            description: 'Display a Responsive List of Images',
+            image: 'demo-responsive-images-list.png',
+            link: 'movies-images-list'
+          },
+        ];
     }
 
     ngOnInit() {
