@@ -12,6 +12,6 @@ export class AlertComponent implements OnInit {
     constructor() {}
 
     ngOnInit(): void {
-        
+
     }
 }
