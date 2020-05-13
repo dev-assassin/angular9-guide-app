@@ -7,7 +7,7 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./alerts.component.css']
 })
 
-export class AlertComponent implements OnInit {
+export class AlertsComponent implements OnInit {
 
     constructor() {}
 
