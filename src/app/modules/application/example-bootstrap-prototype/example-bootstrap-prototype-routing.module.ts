@@ -5,6 +5,7 @@ import { AlertsComponent } from './components/alerts/alerts.component';
 import { BadgeComponent } from './components/badge/badge.component';
 import { BlockquotesComponent } from './components/blockquotes/blockquotes.components';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
 
 const routes: Routes = [
     {path: '', component: ExampleBootstrapPrototypeComponent, children: [
@@ -12,6 +13,7 @@ const routes: Routes = [
         {path: 'badge', component: BadgeComponent},
         {path: 'blockquotes', component: BlockquotesComponent},
         {path: 'breadcrumb', component: BreadcrumbComponent},
+        {path: 'buttons', component: ButtonsComponent},
         {path: '', redirectTo: '/bootstrap-prototype/alerts', pathMatch: 'full'},
         {path: '**', component: AlertsComponent}
     ]}
