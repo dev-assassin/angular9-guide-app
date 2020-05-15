@@ -9,6 +9,8 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
 import {CollapseComponent} from './components/collapse/collapse.component';
 import { DropdownsComponent } from './components/dropdowns/dropdowns.component';
 import { FormsComponent } from './components/forms/forms.component';
+import { ListGroupComponent } from './components/list-group/list-group.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 const routes: Routes = [
     {path: '', component: ExampleBootstrapPrototypeComponent, children: [
@@ -20,6 +22,8 @@ const routes: Routes = [
         {path: 'collapse', component: CollapseComponent},
         {path: 'dropdowns', component: DropdownsComponent},
         {path: 'forms', component: FormsComponent},
+        {path: 'list-group', component: ListGroupComponent},
+        {path: 'modal', component: ModalComponent},
         {path: '', redirectTo: '/bootstrap-prototype/alerts', pathMatch: 'full'},
         {path: '**', component: AlertsComponent}
     ]}
