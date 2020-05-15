@@ -7,6 +7,8 @@ import { BlockquotesComponent } from './components/blockquotes/blockquotes.compo
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import {CollapseComponent} from './components/collapse/collapse.component';
+import { DropdownsComponent } from './components/dropdowns/dropdowns.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 const routes: Routes = [
     {path: '', component: ExampleBootstrapPrototypeComponent, children: [
@@ -16,6 +18,8 @@ const routes: Routes = [
         {path: 'breadcrumb', component: BreadcrumbComponent},
         {path: 'buttons', component: ButtonsComponent},
         {path: 'collapse', component: CollapseComponent},
+        {path: 'dropdowns', component: DropdownsComponent},
+        {path: 'forms', component: FormsComponent},
         {path: '', redirectTo: '/bootstrap-prototype/alerts', pathMatch: 'full'},
         {path: '**', component: AlertsComponent}
     ]}
