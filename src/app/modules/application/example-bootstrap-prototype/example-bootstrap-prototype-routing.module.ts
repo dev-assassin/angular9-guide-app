@@ -11,6 +11,8 @@ import { DropdownsComponent } from './components/dropdowns/dropdowns.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { ListGroupComponent } from './components/list-group/list-group.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
+import { PopoversComponent } from './components/popovers/popovers.component';
 
 const routes: Routes = [
     {path: '', component: ExampleBootstrapPrototypeComponent, children: [
@@ -24,6 +26,8 @@ const routes: Routes = [
         {path: 'forms', component: FormsComponent},
         {path: 'list-group', component: ListGroupComponent},
         {path: 'modal', component: ModalComponent},
+        {path: 'pagination', component: PaginationComponent},
+        {path: 'popovers', component: PopoversComponent},
         {path: '', redirectTo: '/bootstrap-prototype/alerts', pathMatch: 'full'},
         {path: '**', component: AlertsComponent}
     ]}
@@ -34,3 +38,4 @@ const routes: Routes = [
 })
 
 export class ExampleBootstrapPrototypeRoutingModule {}
+
