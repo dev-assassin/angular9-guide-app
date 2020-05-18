@@ -13,6 +13,8 @@ import { ListGroupComponent } from './components/list-group/list-group.component
 import { ModalComponent } from './components/modal/modal.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { PopoversComponent } from './components/popovers/popovers.component';
+import { ProgressComponent } from './components/progress/progress.component';
+import { SpinnersComponent } from './components/spinners/spinners.component';
 
 const routes: Routes = [
     {path: '', component: ExampleBootstrapPrototypeComponent, children: [
@@ -27,11 +29,13 @@ const routes: Routes = [
         {path: 'list-group', component: ListGroupComponent},
         {path: 'modal', component: ModalComponent},
         {path: 'pagination', component: PaginationComponent},
+        {path: 'progress', component: ProgressComponent},
+        {path: 'spinners', component: SpinnersComponent},
         {path: 'popovers', component: PopoversComponent},
         {path: '', redirectTo: '/bootstrap-prototype/alerts', pathMatch: 'full'},
         {path: '**', component: AlertsComponent}
     ]}
-]
+];
 @NgModule({
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
