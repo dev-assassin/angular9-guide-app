@@ -15,6 +15,8 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { PopoversComponent } from './components/popovers/popovers.component';
 import { ProgressComponent } from './components/progress/progress.component';
 import { SpinnersComponent } from './components/spinners/spinners.component';
+import { ToastsComponent } from './components/toasts/toasts.component';
+import { TooltipsComponent } from './components/tooltips/tooltips.component';
 
 const routes: Routes = [
     {path: '', component: ExampleBootstrapPrototypeComponent, children: [
@@ -32,6 +34,8 @@ const routes: Routes = [
         {path: 'progress', component: ProgressComponent},
         {path: 'spinners', component: SpinnersComponent},
         {path: 'popovers', component: PopoversComponent},
+        {path: 'toasts', component: ToastsComponent},
+        {path: 'tooltips', component: TooltipsComponent},
         {path: '', redirectTo: '/bootstrap-prototype/alerts', pathMatch: 'full'},
         {path: '**', component: AlertsComponent}
     ]}
