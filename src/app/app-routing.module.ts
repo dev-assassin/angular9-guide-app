@@ -31,11 +31,11 @@ const routes: Routes = [
   //   loadChildren: () => import('./modules/application/example-template-driven-forms/tutorial.module')
   //     .then(mod => mod.TutorialModule)
   // },
-  // {
-  //   path: 'components',
-  //   loadChildren: () => import('./modules/application/example-components/tutorial.module')
-  //     .then(mod => mod.TutorialModule)
-  // },
+  {
+    path: 'components',
+    loadChildren: () => import('./modules/application/example-components/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
   // {
   //   path: 'services',
   //   loadChildren: () => import('./modules/application/example-services/tutorial.module')
