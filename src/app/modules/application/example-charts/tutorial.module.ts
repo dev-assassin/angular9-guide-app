@@ -1,15 +1,17 @@
 import {NgModule} from '@angular/core';
 import { TutorialComponent } from './tutorial.component';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import {ChartsModule} from 'ng2-charts';
+import { TutorialRoutingModule } from './tutorial-routing.module';
 
 @NgModule({
     declarations: [
         TutorialComponent
     ],
     imports: [
-        BrowserModule,
-        ChartsModule
+        CommonModule,
+        ChartsModule,
+        TutorialRoutingModule
     ],
     exports: [
         TutorialComponent

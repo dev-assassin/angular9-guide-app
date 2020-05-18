@@ -10,7 +10,7 @@ import { Label } from 'ng2-charts';
 })
 export class TutorialComponent implements OnInit {
 
-    public type: ChartType = 'bar';
+    public type: ChartType = 'doughnut';
 
     public labels: Label[] = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
 
@@ -34,10 +34,11 @@ export class TutorialComponent implements OnInit {
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 2
         }];
 
     public options: ChartOptions = {
+        responsive: true,
         scales: {
             yAxes: [{
                 ticks: {

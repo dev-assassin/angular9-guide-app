@@ -16,11 +16,11 @@ const routes: Routes = [
   //   loadChildren: () => import('./modules/application/example-leaflet/tutorial.module')
   //     .then(mod => mod.TutorialModule)
   // },
-  // {
-  //   path: 'charts',
-  //   loadChildren: () => import('./modules/application/example-charts/tutorial.module')
-  //     .then(mod => mod.TutorialModule)
-  // },
+  {
+    path: 'charts',
+    loadChildren: () => import('./modules/application/example-charts/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
   // {
   //   path: 'httpclient',
   //   loadChildren: () => import('./modules/application/items/items.module')
