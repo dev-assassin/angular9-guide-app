@@ -11,11 +11,11 @@ const routes: Routes = [
   //   loadChildren: () => import('./modules/application/movies-images-list/movies-images-list.module')
   //     .then(mod => mod.MoviesImagesListModule)
   // },
-  // {
-  //   path: 'leaflet',
-  //   loadChildren: () => import('./modules/application/example-leaflet/tutorial.module')
-  //     .then(mod => mod.TutorialModule)
-  // },
+  {
+    path: 'leaflet',
+    loadChildren: () => import('./modules/application/example-leaflet/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
   {
     path: 'charts',
     loadChildren: () => import('./modules/application/example-charts/tutorial.module')
