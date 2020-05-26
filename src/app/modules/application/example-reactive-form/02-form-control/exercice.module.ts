@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-// import { ExerciceRoutingModule } from './exercice-routing.module';
+import { ExerciceRoutingModule } from './exercice-routing.module';
 import { ExerciceComponent } from './exercice.component';
 
 @NgModule({
@@ -11,7 +11,7 @@ import { ExerciceComponent } from './exercice.component';
     providers: [
     ],
     imports: [
-        // ExerciceRoutingModule,
+        ExerciceRoutingModule,
         FormsModule,
         ReactiveFormsModule,
     ],

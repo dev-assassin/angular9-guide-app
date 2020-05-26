@@ -39,11 +39,11 @@ const routes: Routes = [
             //     loadChildren: () => import('./03-form-control-class/exercice.module')
             //         .then(mod => mod.ExerciceModule)
             // },
-            // {
-            //     path: 'form-control',
-            //     loadChildren: () => import('./02-form-control/exercice.module')
-            //         .then(mod => mod.ExerciceModule)
-            // },
+            {
+                path: 'form-control',
+                loadChildren: () => import('./02-form-control/exercice.module')
+                    .then(mod => mod.ExerciceModule)
+            },
             {
                 path: '',
                 redirectTo: '/reactive-form/prototype',
