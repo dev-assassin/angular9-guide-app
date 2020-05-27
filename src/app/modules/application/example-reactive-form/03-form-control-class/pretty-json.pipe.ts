@@ -1,28 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { Pipe, PipeTransform } from '@angular/core';
 
-// import { ExerciceRoutingModule } from './exercice-routing.module';
-import { ExerciceComponent } from './exercice.component';
-
-import { ReactiveFormsModule } from '@angular/forms';
-import { PrettyJsonPipe } from './pretty-json.pipe';
-
-@NgModule({
-    declarations: [
-        ExerciceComponent,
-        PrettyJsonPipe
-    ],
-    providers: [
-    ],
-    imports: [
-        CommonModule,
-        // ExerciceRoutingModule,
-        FormsModule,
-        ReactiveFormsModule,
-    ],
-    exports: [
-        ExerciceComponent
-    ],
+@Pipe({
+    name: 'prettyjson'
 })
-export class ExerciceModule { }
+export class PrettyJsonPipe implements PipeTransform {
+
+    transform(value: any, ...args: any[]): any {
+        return JSON.stringify(value, null, 2)
+            .replace(/ /g, '&nbsp;')
+            .replace(/\n/g, '<br/>');
+    }
+
+}
