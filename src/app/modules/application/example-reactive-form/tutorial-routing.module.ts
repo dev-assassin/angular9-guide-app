@@ -24,11 +24,11 @@ const routes: Routes = [
             //     loadChildren: () => import('./06-form-builder-nested/exercice.module')
             //         .then(mod => mod.ExerciceModule)
             // },
-            // {
-            //     path: 'form-builder',
-            //     loadChildren: () => import('./05-form-builder/exercice.module')
-            //         .then(mod => mod.ExerciceModule)
-            // },
+            {
+                path: 'form-builder',
+                loadChildren: () => import('./05-form-builder/exercice.module')
+                    .then(mod => mod.ExerciceModule)
+            },
             {
                 path: 'form-group',
                 loadChildren: () => import('./04-form-group/exercice.module')
