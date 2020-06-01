@@ -1,9 +1,8 @@
-
 import { Component, OnInit } from '@angular/core';
 
-// import { Song } from './song/song';
+import { Song } from './song/song';
 
-// import { SongService } from './song/song.service';
+import { SongService } from './song/song.service';
 
 @Component({
     selector: 'app-example-services',
@@ -12,30 +11,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TutorialComponent implements OnInit {
 
-    // songs: Song[];
-    // songSelected: Song;
+    songs: Song[];
+    songSelected: Song;
     yearSelected: number;
+    toto = 'JGwWNGJdvx8';
 
-    constructor() {
+    constructor(private songService: SongService) {
         this.yearSelected = 1;
     }
 
     ngOnInit() {
-        // this.getSongs(this.yearSelected);
+        this.getSongs(this.yearSelected);
     }
 
-    // getSongs(year: number): void {
-    //     this.songs = this.songService.getSongs(year);
-    // }
+    getSongs(year: number): void {
+        this.songs = this.songService.getSongs(year);
+    }
 
-    // select(song: Song) {
-    //     this.songSelected = song;
-    // }
+    select(song: Song) {
+        this.songSelected = song;
+    }
 
-    // onChange($event: any) {
-    //     this.yearSelected = $event.target.value;
-    //     this.songs = this.songService.getSongs(this.yearSelected);
-    //     this.songSelected = null;
-    // }
+    onChange($event: any) {
+        this.yearSelected = $event.target.value;
+        this.songs = this.songService.getSongs(this.yearSelected);
+        this.songSelected = null;
+    }
 
 }
