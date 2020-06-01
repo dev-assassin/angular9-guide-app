@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { ExerciceComponent } from './exercice.component';
-// import { PrettyJsonPipe } from './pretty-json.pipe';
+import { PrettyJsonPipe } from './pretty-json.pipe';
 
 describe('ExerciceComponent', () => {
     let component: ExerciceComponent;
@@ -17,7 +17,7 @@ describe('ExerciceComponent', () => {
             ],
             declarations: [
                 ExerciceComponent,
-                // PrettyJsonPipe
+                PrettyJsonPipe
             ]
         })
             .compileComponents();
