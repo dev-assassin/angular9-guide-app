@@ -9,11 +9,11 @@ const routes: Routes = [
     {
         path: '', component: TutorialComponent, children: [
             { path: 'prototype', component: ExerciceComponent },
-            // {
-            //     path: 'form-multi',
-            //     loadChildren: () => import('./08-form-multi/exercice.module')
-            //         .then(mod => mod.ExerciceModule)
-            // },
+            {
+                path: 'form-multi',
+                loadChildren: () => import('./08-form-multi/exercice.module')
+                    .then(mod => mod.ExerciceModule)
+            },
             {
                 path: 'form-array',
                 loadChildren: () => import('./07-form-array/exercice.module')
