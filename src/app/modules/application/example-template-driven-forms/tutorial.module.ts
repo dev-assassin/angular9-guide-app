@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-// import { TutorialRoutingModule } from './tutorial-routing.module';
+import { TutorialRoutingModule } from './tutorial-routing.module';
 import { TutorialComponent } from './tutorial.component';
 
 
@@ -11,7 +11,7 @@ import { TutorialComponent } from './tutorial.component';
     imports: [
         CommonModule,
         FormsModule,
-        // TutorialRoutingModule
+        TutorialRoutingModule
     ],
     exports: [
         TutorialComponent,

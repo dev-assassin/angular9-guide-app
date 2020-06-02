@@ -26,11 +26,11 @@ const routes: Routes = [
   //   loadChildren: () => import('./modules/application/items/items.module')
   //     .then(mod => mod.ItemsModule)
   // },
-  // {
-  //   path: 'template-driven-forms',
-  //   loadChildren: () => import('./modules/application/example-template-driven-forms/tutorial.module')
-  //     .then(mod => mod.TutorialModule)
-  // },
+  {
+    path: 'template-driven-forms',
+    loadChildren: () => import('./modules/application/example-template-driven-forms/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
   {
     path: 'components',
     loadChildren: () => import('./modules/application/example-components/tutorial.module')
