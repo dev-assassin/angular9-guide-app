@@ -36,11 +36,11 @@ const routes: Routes = [
     loadChildren: () => import('./modules/application/example-components/tutorial.module')
       .then(mod => mod.TutorialModule)
   },
-  // {
-  //   path: 'services',
-  //   loadChildren: () => import('./modules/application/example-services/tutorial.module')
-  //     .then(mod => mod.TutorialModule)
-  // },
+  {
+    path: 'services',
+    loadChildren: () => import('./modules/application/example-services/tutorial.module')
+      .then(mod => mod.TutorialModule)
+  },
   {
     path: 'reactive-form',
     loadChildren: () => import('./modules/application/example-reactive-form/tutorial.module')
