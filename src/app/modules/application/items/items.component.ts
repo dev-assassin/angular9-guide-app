@@ -35,7 +35,7 @@ export class ItemsComponent implements OnInit {
         this.items = this.state.get(STATE_KEY_ITEMS, <any> []);
 
         if (this.items.length === 0) {
-            this.itemsService.getItems('https://jsonplaceholder.typicode.com/users')
+            this.itemsService.getItems('https://cors-anywhere.herokuapp.com/https://jsonplaceholder.typicode.com/users')
                 .subscribe(
                     items => {
                         const platform = isPlatformBrowser(this.platformId) ?

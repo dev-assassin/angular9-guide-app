@@ -21,11 +21,11 @@ const routes: Routes = [
     loadChildren: () => import('./modules/application/example-charts/tutorial.module')
       .then(mod => mod.TutorialModule)
   },
-  // {
-  //   path: 'httpclient',
-  //   loadChildren: () => import('./modules/application/items/items.module')
-  //     .then(mod => mod.ItemsModule)
-  // },
+  {
+    path: 'httpclient',
+    loadChildren: () => import('./modules/application/items/items.module')
+      .then(mod => mod.ItemsModule)
+  },
   {
     path: 'template-driven-forms',
     loadChildren: () => import('./modules/application/example-template-driven-forms/tutorial.module')
