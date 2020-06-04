@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MoviesImagesListComponent } from './movies-images-list.component';
 import { MoviesImagesListRoutingModule } from './movies-images-list-routing.module';
 
-// import { ConfigService } from './config/config.service';
+import { ConfigService } from './config/config.service';
 // import { PageListComponent } from './page-list/page-list.component';
 
 // import { GridImagesModule } from './grid-images/grid-images.module';
@@ -26,7 +26,7 @@ import { MoviesImagesListRoutingModule } from './movies-images-list-routing.modu
         // SearchResultModule,
     ],
     providers: [
-        // ConfigService,
+        ConfigService,
     ],
     exports: [
         MoviesImagesListComponent
