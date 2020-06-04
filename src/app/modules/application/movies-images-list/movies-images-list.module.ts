@@ -7,7 +7,7 @@ import { MoviesImagesListRoutingModule } from './movies-images-list-routing.modu
 import { ConfigService } from './config/config.service';
 // import { PageListComponent } from './page-list/page-list.component';
 
-// import { GridImagesModule } from './grid-images/grid-images.module';
+import { GridImagesModule } from './grid-images/grid-images.module';
 // import { PaginationModule } from './pagination/pagination.module';
 // import { SearchBarModule } from './search-bar/search-bar.module';
 // import { SearchResultModule } from './search-result/search-result.module';
@@ -20,7 +20,7 @@ import { ConfigService } from './config/config.service';
     imports: [
         CommonModule,
         MoviesImagesListRoutingModule,
-        // GridImagesModule,
+        GridImagesModule,
         // PaginationModule,
         // SearchBarModule,
         // SearchResultModule,
