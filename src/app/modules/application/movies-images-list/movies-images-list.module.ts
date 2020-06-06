@@ -5,7 +5,7 @@ import { MoviesImagesListComponent } from './movies-images-list.component';
 import { MoviesImagesListRoutingModule } from './movies-images-list-routing.module';
 
 import { ConfigService } from './config/config.service';
-// import { PageListComponent } from './page-list/page-list.component';
+import { PageListComponent } from './page-list/page-list.component';
 
 import { GridImagesModule } from './grid-images/grid-images.module';
 // import { PaginationModule } from './pagination/pagination.module';
@@ -15,7 +15,7 @@ import { GridImagesModule } from './grid-images/grid-images.module';
 @NgModule({
     declarations: [
         MoviesImagesListComponent,
-        // PageListComponent,
+        PageListComponent,
     ],
     imports: [
         CommonModule,
