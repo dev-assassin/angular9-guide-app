@@ -9,7 +9,7 @@ import { PageListComponent } from './page-list/page-list.component';
 
 import { GridImagesModule } from './grid-images/grid-images.module';
 import { PaginationModule } from './pagination/pagination.module';
-// import { SearchBarModule } from './search-bar/search-bar.module';
+import { SearchBarModule } from './search-bar/search-bar.module';
 // import { SearchResultModule } from './search-result/search-result.module';
 
 @NgModule({
@@ -22,7 +22,7 @@ import { PaginationModule } from './pagination/pagination.module';
         MoviesImagesListRoutingModule,
         GridImagesModule,
         PaginationModule,
-        // SearchBarModule,
+        SearchBarModule,
         // SearchResultModule,
     ],
     providers: [
