@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-// import { SearchBarRoutingModule } from './search-bar-routing.module';
+import { SearchBarRoutingModule } from './search-bar-routing.module';
 import { SearchBarComponent } from './search-bar.component';
 
 
@@ -12,7 +12,7 @@ import { SearchBarComponent } from './search-bar.component';
     ],
     imports: [
         CommonModule,
-        // SearchBarRoutingModule,
+        SearchBarRoutingModule,
         FormsModule,
     ],
     exports: [
