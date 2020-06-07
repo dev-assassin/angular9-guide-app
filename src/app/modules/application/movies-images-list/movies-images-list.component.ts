@@ -1,7 +1,7 @@
 import { Component, OnInit, Injector } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
-// import { PageListComponent } from './page-list/page-list.component';
+import { PageListComponent } from './page-list/page-list.component';
 
 @Component({
     selector: 'app-movies-list',

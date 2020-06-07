@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// import { PaginationRoutingModule } from './pagination-routing.module';
+import { PaginationRoutingModule } from './pagination-routing.module';
 import { PaginationComponent } from './pagination.component';
 
 @NgModule({
@@ -10,7 +10,7 @@ import { PaginationComponent } from './pagination.component';
     ],
     imports: [
         CommonModule,
-        // PaginationRoutingModule
+        PaginationRoutingModule
     ],
     exports: [
         PaginationComponent,
