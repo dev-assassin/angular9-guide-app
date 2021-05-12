@@ -44,7 +44,7 @@
     "@nguniversal/express-engine": "9.1.0",
     "bootstrap": "4.4.1",
     "express": "4.17.1",
-    "chart.js": "2.9.3",
+    "chart.js": "2.9.4",
     "jquery": "3.5.1",
     "leaflet": "1.6.0",
     "ng2-charts": "2.3.0",
